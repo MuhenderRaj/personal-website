@@ -6,60 +6,142 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>Muhender Raj Rajvee</title>
+    
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js">
+    </script>
 </head>
 <body>
     Website under Construction. Please stand by.
-    <section>
+    
+    <header>
+        <button class="tab-button" id="main-tab" onclick="changeTab(event, 'about')">About Me</button>
+        <button class="tab-button" onclick="changeTab(event, 'education')">Education</button>
+        <button class="tab-button" onclick="changeTab(event, 'projects')">Projects</button>
+        <button class="tab-button" onclick="changeTab(event, 'classes')">Classes Taken</button>
+    </header>
+    
+    <section class="page-section" id="about">
         <h1>About Me</h1>
         <p>
             <ul>
                 <li>Course 6-3 (Computer Science) Major at the Massachusetts Institute of Technology</li>
                 <li>Transfer Class of 2024</li>
-                <li>Previously studied in the University of California, Los Angeles (UCLA)</li>
+                <li>Previously studied at the University of California, Los Angeles (UCLA)</li>
             </ul>
         </p>
     </section>
-    <section>
-        <h1>Courses Taken/Currently Taking</h1>
-        <section class="mit">
-            <h2>Fall 2021</h2>
+
+    <section class="page-section" id="education">
+        <h1>Education</h1>
+        <section id="mit">
+            <h3>Massachusetts Institute of Technology (MIT)</h3>
             <ul>
-                <li>6.004 - Computational Structures</li>
-                <li>6.006 - Introduction to Algorithms</li>
-                <li>6.009 - Fundamentals of Programming</li>
-                <li>6.042 - Mathematics for Computer Science</li>
-                <li>14.02 - Introduction to Macroeconomics</li>
+                <li>GPA: 5.0/5.0</li>
             </ul>
         </section>
-        <section class="ucla">
-            <h2>Spring 2020</h2>
+        
+        <section id="ucla">
+            <h3>University of California, Los Angeles (UCLA)</h3>
             <ul>
-                <li>Math 32B - Calculus of Several Variables II</li>
-                <li>Math 33A - Linear Algebra and Applications</li>
-                <li>Physics 1CH - Physics for Scientists and Engineers: Electrodynamics, Optics, and Special Relativity (Honors)</li>
-                <li>Comp Sci 33 - Introduction to Computer Architecture</li>
-                <li>Physics 4AL - Physics Laboratory for Scientists and Engineers: Mechanics</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Winter 2020</h2>
-            <ul>
-                <li>Math 31B - Integration and Infinite Series</li>
-                <li>Math 32A - Calculus of Several Variables I</li>
-                <li>Comp Sci 32 - Introduction to Computer Science II</li>
-                <li>Physics 1BH - Physics for Scientists and Engineers: Oscillations, Waves, Electric and Magnetic Fields (Honors)</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Fall 2020</h2>
-            <ul>
-                <li>Math 31A - Single Variable Calculus</li>
-                <li>Comp Sci 31 - Introduction to Computer Science I</li>
-                <li>Eng Comp 3 - English Composition, Rhetoric, and Language</li>
-                <li>Comp Sci 1 - Freshman CS Seminar</li>
-                <li>Chem Eng 10 - Freshman Chemical Engineering Seminar</li>
+                <li>GPA: 4.0/4.0</li>
             </ul>
         </section>
     </section>
+    
+    <section class="page-section" id="projects">
+        <h1>Projects</h1>
+        <section class="project">
+            <h3>The Game of Life</h3>
+            <!--Insert image that is also a link here-->
+            <p>A game of life simulation made in plain HTML5, CSS, and JavaScript.</p>
+        </section> 
+        
+        <section class="project">
+            <h3>Skreech!</h3>
+            <!--image-->
+            <p>The game. Made with Unity3D during UCLA ACM Studio's Winter-Spring projects as a team.</p>
+        </section>
+        
+        <section class="project">
+            <h3>Cassava Leaf Disease Classification</h3>
+            <!--image-->
+            <p>
+                A convolutional neural network to detect and classify diseases in cassava leaves. Made with PyTorch during UCLA ACM
+                AI's Winter projects as a team.
+            </p>
+        </section>
+        
+        <section class="project">
+            <h3>Summify</h3>
+            <!--image-->
+            <p>
+                A website where people can upload lecture transcripts and get a summarized version of it, along with questions.
+                Made as a team for LA Hacks 2021.
+            </p>
+        </section>
+        
+        <!-- <section class="project">
+            <h3></h3>
+        </section> -->
+    </section>
+
+    <section class="page-section" id="classes">
+        <h1>Courses Taken/Currently Taking</h1>
+        <section id="mit">
+            <section>
+                <h3>IAP 2022</h3>
+                <ul>
+                    <li>6.176 - Pokerbots tournament</li>
+                    <li>6.148 (listener) - Web.lab</li>
+                    <li>15.S50 (listener) - How to Win at Texas Hold'em Poker</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Fall 2021</h3>
+                <ul>
+                    <li>6.004 - Computational Structures</li>
+                    <li>6.006 - Introduction to Algorithms</li>
+                    <li>6.009 - Fundamentals of Programming</li>
+                    <li>6.042 - Mathematics for Computer Science</li>
+                    <li>14.02 - Introduction to Macroeconomics</li>
+                </ul>
+            </section>
+        </section>
+        <section id="ucla">
+            <section>
+                <h3>Spring 2020</h3>
+                <ul>
+                    <li>Math 32B - Calculus of Several Variables II</li>
+                    <li>Math 33A - Linear Algebra and Applications</li>
+                    <li>Physics 1CH - Physics for Scientists and Engineers: Electrodynamics, Optics, and Special Relativity (Honors)</li>
+                    <li>Comp Sci 33 - Introduction to Computer Architecture</li>
+                    <li>Physics 4AL - Physics Laboratory for Scientists and Engineers: Mechanics</li>
+                </ul>
+                </section>
+            <section>
+                <h3>Winter 2020</h3>
+                <ul>
+                    <li>Math 31B - Integration and Infinite Series</li>
+                    <li>Math 32A - Calculus of Several Variables I</li>
+                    <li>Comp Sci 32 - Introduction to Computer Science II</li>
+                    <li>Physics 1BH - Physics for Scientists and Engineers: Oscillations, Waves, Electric and Magnetic Fields (Honors)</li>
+                </ul>
+            </section>
+            <section>
+                <h3>Fall 2020</h3>
+                <ul>
+                    <li>Math 31A - Single Variable Calculus</li>
+                    <li>Comp Sci 31 - Introduction to Computer Science I</li>
+                    <li>Eng Comp 3 - English Composition, Rhetoric, and Language</li>
+                    <li>Comp Sci 1 - Freshman CS Seminar</li>
+                    <li>Chem Eng 10 - Freshman Chemical Engineering Seminar</li>
+                </ul>
+            </section>
+        </section>
+    </section>
+    <script>
+        document.getElementById("main-tab").click()
+    </script>
 </body>
 </html>

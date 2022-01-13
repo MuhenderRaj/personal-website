@@ -1,0 +1,17 @@
+:root {
+    --main1: rgb(1, 154, 255);
+    --main2: #0067dd;
+    --main3: rgb(124, 240, 255);
+}
+
+/* Tab-Switching */
+
+.tab-button {
+    border: none;
+    outline: none;
+    background-color: var(--main1);
+}
+
+.tab-button.active {
+    background-color: var(--main2);
+}
