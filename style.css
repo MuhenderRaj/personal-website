@@ -2,16 +2,36 @@
     --main1: rgb(1, 154, 255);
     --main2: #0067dd;
     --main3: rgb(124, 240, 255);
+    
+    --default-padding: 16px;
+}
+
+body {
+    margin: 0;
 }
 
 /* Tab-Switching */
+
+nav {
+    background-color: var(--main1);
+}
+
+nav:first-child {
+    padding-left: var(--default-padding);
+}
 
 .tab-button {
     border: none;
     outline: none;
     background-color: var(--main1);
+    margin: 0;
+    padding: var(--default-padding);
 }
 
 .tab-button.active {
     background-color: var(--main2);
+}
+
+.tab-button:hover {
+    background-color: var(--main3);
 }
